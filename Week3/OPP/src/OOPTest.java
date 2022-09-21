@@ -1,7 +1,7 @@
 public class OOPTest {
     public static void main( String[] args ) {
 
-        Car car1 = new Car();// tworzymy nowy obiekt typu Car <==> tworzymy insrtancję klasy Car
+        Car car1 = new Car();// tworzymy nowy obiekt typu Car <==> tworzymy instancję klasy Car
         Car car2 = new Car();
         // poniższa liniejka nie kopiuje obiektu tylko kopiuje referencje
         Car car3 = car1; // tworze nowy obiekt przypisujac do niego car1

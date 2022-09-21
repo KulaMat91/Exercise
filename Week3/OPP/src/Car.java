@@ -19,27 +19,33 @@ public class Car { //Klasy rozpoczynamy z dużej litery
     }
 // gettery
     public String getName(){
+
         return name;
     }
 
     public String getColour(){
+
         return colour;
     }
 
     public int getNumberOfWheels(){
+
         return numberOfWheels;
     }
 
 //    settery
     public void setName(String name){
+
         this.name = name;
     }
 
     public void setColour(String colour){
+
         this.colour = colour;
     }
 
     public void setNumberOfWheels(int numberOfWheels){
+
         this.numberOfWheels = numberOfWheels;
     }
 
