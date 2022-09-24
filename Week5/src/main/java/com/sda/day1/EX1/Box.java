@@ -14,4 +14,8 @@ public class Box {
 
     }
 
+    public String toString(){
+        return "Color: " + color + "\nSize: " + size + "\nHeight: " + height;
+    }
+
 }
