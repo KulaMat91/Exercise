@@ -15,8 +15,11 @@ public class Company {
 
     public Company() {
     }
-    public Company(int id, String name, String adress){
+
+    public Company(int id, String name, Adress adress) {
+        this.id = id;
         this.name = name;
+        this.adress = adress;
     }
 
     public void setId(int id) {
@@ -39,7 +42,7 @@ public class Company {
         return id;
     }
 
-    public  String getName(){
+    public String getName() {
         return name;
     }
 

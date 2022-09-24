@@ -21,8 +21,8 @@ public enum Department {
 
     @Override
     public String toString() {
-        return "Department{" +
-                "departmentId=" + departmentId +
+        return "Department {" +
+                "departmentId = " + departmentId +
                 '}';
     }
 }

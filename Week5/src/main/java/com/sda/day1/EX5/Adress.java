@@ -7,17 +7,17 @@ public class Adress {
     private String city;
     private int postCode;
 
-    public Adress(){
+    public Adress() {
     }
 
-    public Adress(String street, String city, int postCode){
+    public Adress(String street, String city, int postCode) {
         this.street = street;
         this.city = city;
         this.postCode = postCode;
     }
 
-//    Klasa która kopiuje
-    public Adress(Adress adress){
+    //    Klasa która kopiuje
+    public Adress(Adress adress) {
         this.street = adress.getStreet();
         this.city = adress.getCity();
         this.postCode = adress.getPostCode();

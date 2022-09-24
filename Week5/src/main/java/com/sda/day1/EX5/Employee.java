@@ -5,7 +5,7 @@ import java.util.Objects;
 //Napisz klase Employee.
 //Dodaj pola id, name, surname, pesel, address typu Address department,
 //Dodaj setery, gettery oraz metode toString()
-public class Employee {
+public abstract class Employee implements Workable {
     private int id;
     private String name;
     private String surname;
@@ -14,15 +14,28 @@ public class Employee {
 
     private Department department;
 
+    private EmployeeRole employeeRole;
 
-    public Employee(int id, String name, String surname, String pesel, Adress adress, Department department) {
+    public Employee() {
+    }
+
+
+    public Employee(int id, String name, String surname, String pesel, Adress adress, Department department, EmployeeRole employeeRole) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.pesel = pesel;
         this.adress = adress;
         this.department = department;
+        this.employeeRole = employeeRole;
     }
+
+    @Override
+    public boolean doWork() {
+        return true;
+    }
+
+    public abstract void printEmployeeRole();
 
 
     public Department getDepartment() {
@@ -49,6 +62,10 @@ public class Employee {
         return pesel;
     }
 
+    public EmployeeRole getEmployeeRole() {
+        return employeeRole;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -71,6 +88,10 @@ public class Employee {
 
     public void setDepartment(Department department) {
         this.department = department;
+    }
+
+    public void setEmployeeRole(EmployeeRole employeeRole) {
+        this.employeeRole = employeeRole;
     }
 
     @Override

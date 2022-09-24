@@ -56,9 +56,9 @@ public class Box {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Box box = (Box) o;
+        if (this == o) return true; // sprawdza czy to sa te same obiekty
+        if (o == null || getClass() != o.getClass()) return false; // czy ten obiekt nie jest instancją tej samej klasy
+        Box box = (Box) o; // castowanie Objectu do Box
         return weight == box.weight && Objects.equals(color, box.color) && Objects.equals(size, box.size);
     }
 
