@@ -6,7 +6,6 @@ public class Main {
         Tiger tiger = new Tiger("Teddy");
         tiger.makeNoise();
 
-        System.out.println("26.42 minuta !!!");
 
     }
 }
