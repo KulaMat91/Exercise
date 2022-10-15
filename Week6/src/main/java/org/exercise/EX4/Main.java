@@ -11,5 +11,10 @@ package org.exercise.EX4;
 public class Main {
     public static void main(String[] args) {
 
+//        NullPonterExceptions
+        RegularAccount account = new RegularAccount();
+        account = null;
+
+//        System.out.println(account.getMoney());
     }
 }
