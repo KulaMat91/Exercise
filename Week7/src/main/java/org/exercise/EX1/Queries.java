@@ -1,7 +1,7 @@
 package org.exercise.EX1;
 
 public interface Queries {
-    VideoGame mostUnitsSolidYear();
+    VideoGame mostUnitsSold();
 
-//   void Integer genreGames(GamesGenres);
+//  Integer genreGames(GamesGenres);
 }
