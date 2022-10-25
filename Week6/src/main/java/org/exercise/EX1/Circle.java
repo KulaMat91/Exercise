@@ -8,10 +8,15 @@ public class Circle extends GeometricalFigures {
         super(name);
         this.diameter = diameter;
     }
-
+    @Override
     public void area() {
         double area = Math.PI * Math.pow(0.5 * diameter, 2);
         System.out.println("The area of circle is: " + area);
+    }
+
+    @Override
+    public void perimeter() {
+        circumference();
     }
 
     public void circumference() {

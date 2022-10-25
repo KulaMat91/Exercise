@@ -7,11 +7,11 @@ public class Human extends Animal implements SoundInterface {
     }
 
     @Override
-    public void eat(){
+    public void eat() {
         System.out.println("Human eating.");
     }
 
-    public void goToWork(){
+    public void goToWork() {
         System.out.println("Go to work");
     }
 }

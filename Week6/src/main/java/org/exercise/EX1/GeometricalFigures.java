@@ -1,9 +1,14 @@
 package org.exercise.EX1;
 
-public class GeometricalFigures {
+import org.example.EXP5other.D;
+
+public abstract class GeometricalFigures {
     private String name;
 
     GeometricalFigures(String name){
         this.name = name;
     }
+
+    public abstract void area();
+    public abstract void perimeter();
 }

@@ -28,5 +28,7 @@ public class Main {
 
 //        layEggs is a Reptile methods
         snake.layEggs();
+        System.out.println(snake.name);
+        snake.displayName();
     }
 }

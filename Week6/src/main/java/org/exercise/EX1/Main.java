@@ -9,6 +9,7 @@ public class Main {
         Circle circle1 = new Circle("Circle", 22.4);
         circle1.area();
         circle1.circumference();
+        circle1.perimeter();
 
         System.out.println();
 
@@ -27,9 +28,9 @@ public class Main {
 
         System.out.println();
 
-        Triangle triangle1 = new Triangle("Triangle 1", 2);
-        triangle1.area();
-        triangle1.perimeter();
+        EquilateralTriangle equilateralTriangle1 = new EquilateralTriangle("Triangle 1", 2);
+        equilateralTriangle1.area();
+        equilateralTriangle1.perimeter();
 
     }
 }

@@ -1,20 +1,25 @@
 package org.exercise.EX1;
 
-public class Triangle extends Square {
-
-    Triangle(String name, double side) {
-        super(name, side);
+public class Triangle extends GeometricalFigures {
+    private final double a;
+    private final double b;
+    private final double c;
+    private final double h;
+    Triangle(String name,double a, double b, double c, double h) {
+        super(name);
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.h = h;
     }
 
-
+    @Override
     public void area() {
-        double area = (getSide() * Math.sqrt(3))/4;
-        System.out.printf("The area of triangle is: %f\n", area);
+
     }
 
+    @Override
     public void perimeter() {
-        double perimeter = getSide()*3;
-        System.out.println("Perimeter of the triangle is: " + perimeter);
-    }
 
+    }
 }
