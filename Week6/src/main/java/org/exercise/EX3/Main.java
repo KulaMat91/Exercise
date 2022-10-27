@@ -8,5 +8,14 @@ package org.exercise.EX3;
 public class Main {
     public static void main(String[] args) {
 
+        Bike bike = new Bike("Unibike");
+        System.out.println(bike.driveType);
+        System.out.println(bike.numberOfPassenger);
+
+        Car car = new Car("Opel",FuelCar.DISEL,4);
+        car.addPassenger();
+        car.addPassenger();
+        System.out.println(car.numberOfPassenger);
+
     }
 }

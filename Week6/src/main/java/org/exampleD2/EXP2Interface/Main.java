@@ -14,8 +14,10 @@ public class Main {
 
 // Actual type - Human; Perceived type - Animal
         Animal humanAsAnimal = humanAsHuman; // new Human()
+        Animal human2 = new Human();
 
         humanAsHuman = (Human) humanAsAnimal; // Will work, because actual type is Human, only perceived type was changed to Animal
+
 
 //Polimorfizm Klasy
 //        Human actual objects type
