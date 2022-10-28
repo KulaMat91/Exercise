@@ -1,6 +1,9 @@
 package org.exercise.EX2;
 
-import org.example.EXP5other.E;
+
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 //Zadanie 2: Firma
 //Stwórz hierarchię klas reprezentującą hierarchię w dużej firmie.
@@ -42,6 +45,7 @@ public class Main {
         company1.listAllEmployees();
         company1.listOfManagers();
         company1.getDepartmentWithLeastEmployee();
+//        System.out.println(company1.getEmployees().stream().map(Object ::toString).collect(Collectors.joining()));
 
 
 

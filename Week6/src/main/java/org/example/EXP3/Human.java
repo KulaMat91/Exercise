@@ -16,7 +16,7 @@ public class Human extends Mammal {
     }
 
     public void speak(String name) {
-        System.out.printf("Hello $s!", name);
+        System.out.printf("Hello %s!", name);
         System.out.println();
     }
 

@@ -6,7 +6,7 @@ public class Train extends Vehicle implements TankInterface{
     }
 
     @Override
-    public void tank() {
+    public void tank(Fuel fuel) {
 
     }
 

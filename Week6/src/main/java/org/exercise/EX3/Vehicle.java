@@ -6,5 +6,15 @@ public abstract class Vehicle {
     protected int numberOfPassenger;
 
     public Vehicle(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", driveType='" + driveType + '\'' +
+                ", numberOfPassenger=" + numberOfPassenger +
+                '}';
     }
 }

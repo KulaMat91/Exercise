@@ -35,9 +35,6 @@ public class Company {
         return departments;
     }
 
-    public void addEmployee(Employee employee) {
-        this.employees.add(employee);
-    }
 
     public void listAllEmployees() {
         for (Department department : departments) {
@@ -53,20 +50,20 @@ public class Company {
     public void listOfManagers() {
         System.out.println("List of managers: ");
         for (Department department : departments) {
-                System.out.println(department.getManager());
+            System.out.println(department.getManager());
         }
     }
-    public void getDepartmentWithLeastEmployee(){
+
+    public void getDepartmentWithLeastEmployee() {
         Department leastEmployeeDepartment = null;
-        for (int i = 0; i < departments.size() ; i++){
+        for (int i = 0; i < departments.size(); i++) {
             System.out.println(departments.get(i));
         }
-        for (Department department : departments){
-            if (leastEmployeeDepartment == null){
+        for (Department department : departments) {
+            if (leastEmployeeDepartment == null) {
                 leastEmployeeDepartment = department;
-            }
-            else {
-                if (department.getEmployees().size() < leastEmployeeDepartment.getEmployees().size()){
+            } else {
+                if (department.getEmployees().size() < leastEmployeeDepartment.getEmployees().size()) {
                     leastEmployeeDepartment = department;
                 }
             }
@@ -74,6 +71,9 @@ public class Company {
         System.out.println("Department with least employees: " + leastEmployeeDepartment);
     }
 
+    public void addEmployee(Employee employee) {
+        this.employees.add(employee);
+    }
 
     public void companyList() {
         System.out.println("Employee List");

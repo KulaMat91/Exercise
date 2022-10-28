@@ -12,10 +12,16 @@ public class Main {
         System.out.println(bike.driveType);
         System.out.println(bike.numberOfPassenger);
 
-        Car car = new Car("Opel",FuelCar.DISEL,4);
+        Car car = new Car("Opel", Fuel.DISEL,4);
+        car.tank(Fuel.DISEL);
         car.addPassenger();
         car.addPassenger();
         System.out.println(car.numberOfPassenger);
+        System.out.println(car.name);
+        System.out.println(car);
+
+        Train train = new Train("IC");
+        System.out.println(train.name);
 
     }
 }

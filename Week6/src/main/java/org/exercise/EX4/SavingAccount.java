@@ -1,6 +1,6 @@
 package org.exercise.EX4;
 
-public class SavingAccount extends RegularAccount implements MonthPassedEventListener{
+public class SavingAccount extends RegularAccount implements MonthPassedEventListener {
     private final Integer monthlyInterestRate;
 
     public SavingAccount(Integer monthlyInterestRate) {
@@ -9,7 +9,7 @@ public class SavingAccount extends RegularAccount implements MonthPassedEventLis
 
     @Override
     public void onMonthPassed() {
-        Float interestMultiplier = (100 +monthlyInterestRate)/100.0f;
-        this.money = Math.round(this.money*interestMultiplier);
+        Float interestMultiplier = (100 + monthlyInterestRate) / 100.0f;
+        this.money = Math.round(this.money * interestMultiplier);
     }
 }

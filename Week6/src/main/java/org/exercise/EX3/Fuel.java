@@ -1,6 +1,6 @@
 package org.exercise.EX3;
 
-public enum FuelCar {
+public enum Fuel {
     ELECTRIC,
     DISEL,
     PETROL
