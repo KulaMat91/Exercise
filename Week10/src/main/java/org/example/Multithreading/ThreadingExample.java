@@ -3,6 +3,7 @@ package org.example.Multithreading;
 public class ThreadingExample {
     //Thread - klasa
     //Runnable - interfejs
+    //Dead lock - watki sobie nawzajem poblokują pracę
 
     public static void runExample() {
         Thread threadA = new Thread(() -> {
@@ -34,13 +35,36 @@ public class ThreadingExample {
         threadD.start();
     }
 
-    public static void runExample2(){
+    public static void runExample2() {
         Counter counter = new Counter();
 
 
         Thread threadA = new Thread(counter, "Thread A");
         Thread threadB = new Thread(counter, "Thread B");
 
+        threadA.start();
+        threadB.start();
+    }
+
+    public static void deadLockExample() {
+        Thread threadA = new Thread(() -> {
+            synchronized (IntegerData.x) {
+                System.out.println(IntegerData.x);
+
+                synchronized (IntegerData.y) {
+                    System.out.println(IntegerData.y);
+                }
+            }
+        });
+        Thread threadB = new Thread(() -> {
+            synchronized (IntegerData.y) {
+                System.out.println(IntegerData.y);
+
+                synchronized (IntegerData.x) {
+                    System.out.println(IntegerData.x);
+                }
+            }
+        });
         threadA.start();
         threadB.start();
     }

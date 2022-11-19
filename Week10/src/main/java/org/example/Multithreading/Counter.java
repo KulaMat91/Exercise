@@ -16,7 +16,7 @@ public class Counter implements Runnable {
     }
 
 
-
+// synchronizacja działan w wielowątkowości
     public synchronized void increaseTo(Integer target) {
         for (Integer i = 0; i < target; i++) {
             increase();
