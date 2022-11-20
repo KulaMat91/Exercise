@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Array out of band exceptions
-        String[] array = new String[]{"O", "Two", "Three"};
+        String[] array = new String[]{"One", "Two", "Three"};
 //        System.out.println(array[3]);
 //        getArrayElement(array, 3);
 //        Integer x = Integer.parseInt("t");

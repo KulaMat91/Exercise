@@ -1,6 +1,7 @@
 package org.exampleD1.EXP2;
 
 import java.util.List;
+
 //When generic type extend/implements  another generic type, the T dosen't have to to be specified
 public class DataAccessObject<T> implements DAOInterface<T> {
 
@@ -18,10 +19,12 @@ public class DataAccessObject<T> implements DAOInterface<T> {
     public T getValue(Integer index) {
         return values.get(index);
     }
+
     @Override
     public void setValue(Integer index, T value) {
         values.set(index, value);
     }
+
     @Override
     public void addValue(T value) {
         values.add(value);
