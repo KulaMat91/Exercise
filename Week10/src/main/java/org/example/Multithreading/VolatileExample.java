@@ -8,8 +8,6 @@ public class VolatileExample {
             this.currentCount = 1;
         }
 
-
-
         public void increaseTo(Integer target) {
             for (Integer i = 0; i < target; i++) {
                  currentCount++;
@@ -40,4 +38,12 @@ public class VolatileExample {
             decreaseTo(100);
         }
     }
+    //TODO poprawic example
+//    public static void example(){
+//        VolatileCounter volatileCounter = new VolatileCounter();
+//        Thread a = new Thread(volatileCounter, "A");
+//        Thread b = new Thread(volatileCounter, "B");
+//        a.start();
+//        b.start();
+//    }
 }

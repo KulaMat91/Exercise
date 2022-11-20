@@ -5,6 +5,7 @@ public class Main {
 //        ThreadingExample.runExample();
 //        ThreadingExample.runExample2(); // Race Condition
 //        ThreadingExample.deadLockExample(); // dead lock program sie nie zakonczy
+        VolatileExample.example();
     }
 }
 
