@@ -22,7 +22,7 @@ public class User {
         this.language = language;
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
@@ -30,7 +30,7 @@ public class User {
         return name;
     }
 
-    public String getPassword(){
+    public String getPassword() {
         return password;
     }
 
@@ -38,10 +38,11 @@ public class User {
         return language;
     }
 
-    public void setName(String name){
-        this.name= name;
+    public void setName(String name) {
+        this.name = name;
     }
-    public void setPassword(String password){
+
+    public void setPassword(String password) {
         this.password = password;
     }
 
@@ -55,11 +56,9 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", language=" + language +
-                '}';
+        return "ID= " + id +
+                ", Name= " + name +
+                ", Password= " + password +
+                ", Language= " + language ;
     }
 }

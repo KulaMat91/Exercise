@@ -14,16 +14,18 @@ public class Main {
     private static final String USER_DELETE_SQL = "DELETE FROM user WHERE id = ? ";
     private static final String USER_FILTER_LANGUAGE_SQL = "SELECT * FROM user WHERE language = ?";
     private static final String USER_FILTER_NAME_SQL = "SELECT id, name, password, language FROM user WHERE name = ?";
+    private static final String USER_LIST_SQL = "SELECT * FROM user";
     private static Connection connection;
 
     public static void main(String[] args) {
         try {
             openConnection();
-//            saveUser(new User("Jan", "sdasa", Language.FR));
+//            saveUser(new User("Kate", "qwewws", Language.DE));
 //            removeUserById(6);
             List<User> user = filterByLanguage(Language.PL);
             System.out.println(user);
 //            filterByName("Mariusz");
+//            listOfUsers();
 
             closeConnection();
         } catch (SQLException e) {
@@ -95,6 +97,17 @@ public class Main {
             System.out.println("ID: " + rs.getInt(1));
             System.out.println("Name: " + rs.getString(2));
             System.out.println("Language: " + rs.getString(4));
+        }
+    }
+
+    public static void listOfUsers() throws SQLException {
+        PreparedStatement preparedStatement = connection.prepareStatement(USER_LIST_SQL);
+        ResultSet rs = preparedStatement.executeQuery();
+        while (rs.next()){
+            System.out.println("ID: " + rs.getInt(1));
+            System.out.println("Name: " + rs.getString(2));
+            System.out.println("Language: " + rs.getString(4));
+            System.out.println();
         }
     }
 }
