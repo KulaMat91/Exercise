@@ -22,5 +22,11 @@
 •create drop dodatkowo usuwa schemat, gdy SessionFactory zostaje zamknięta, typowo, gdy aplikacja kończy działanie.-->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
+        <!-- mapowanie do SQLa klasy Employee (encji) przez podanie położenie pakietu org.example.exercise3Hibernate.Employee -->
+        <mapping class="org.Hibernate.Employee"/>
+
+        <mapping class="org.Hibernate.Phone"/>
+
+
     </session-factory>
 </hibernate-configuration>
