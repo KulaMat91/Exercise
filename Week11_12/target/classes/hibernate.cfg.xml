@@ -27,6 +27,10 @@
 
         <mapping class="org.Hibernate.Phone"/>
 
+        <mapping class="org.Hibernate.Task"/>
+
+        <mapping class="org.Hibernate.Project"/>
+
 
     </session-factory>
 </hibernate-configuration>

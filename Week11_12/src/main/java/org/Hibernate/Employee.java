@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity // oznaczenie klasy jako encja aby umożliwić dodanie jej do Bazy Danych
 public class Employee {
@@ -29,8 +30,13 @@ public class Employee {
     @JoinColumn(name = "phone_id")
     private Phone phone;
 
-    public Employee() {
+    @OneToMany (mappedBy = "employee")
+    private List<Task> tasks;
 
+    @ManyToMany(mappedBy = "employeeList")
+    private List<Project> projectList;
+
+    public Employee() {
     }
 
     public Employee(String name, String surname, LocalDate birthday, String email) {
@@ -95,6 +101,10 @@ public class Employee {
 
     public void setPhone(Phone phone) {
         this.phone = phone;
+    }
+
+    public void setProjects(List<Project> projectList) {
+        this.projectList = projectList;
     }
 
     @Override

@@ -29,6 +29,7 @@ public class Phone {
 
     }
 
+
     public Phone(PhoneBrand phoneBrand, String model) {
         this.phoneBrand = phoneBrand;
         this.model = model;
